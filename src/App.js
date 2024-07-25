@@ -1,33 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import Greeting from './views/Greeting';
-import Introduction from './views/Introduction';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Adjust path as needed
+import Home from './views/Home';
+import AboutMe from './views/AboutMe';
+import Projects from './views/Projects'; // Ensure this component exists
 
-function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-    if (scrollPosition > 25) { // Adjust scrollY value as needed
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+const App = () => {
   return (
     <div className="App">
-      <Greeting isScrolled={isScrolled} />
-      <Introduction isScrolled={isScrolled} />
+      <Navbar />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,22 +1,10 @@
 import React from 'react';
-import './Introduction.css';
+import './AboutMe.css';
 
-const Introduction = ({ isScrolled }) => {
-
-  const onDownloadSneakIn = () => {
-    const url = '../assets/SneakIn.zip';
-    const link = document.createElement("a");
-
-    link.href = url;
-    link.download = 'SneakIn.zip';
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const Introduction = () => {
 
   return (
-    <div className={`introduction ${!isScrolled ? 'hidden' : ''}`}>
+    <>
       <h1>About Me</h1>
       <p>
         Hi! I'm Benton Le, a passionate Software Engineering Technology student in my third year, and set to graduate fall 2024<br></br>
@@ -85,7 +73,7 @@ const Introduction = ({ isScrolled }) => {
           or connect with me on <a href="https://www.linkedin.com/in/benton-le">https://www.linkedin.com/in/benton-le</a>
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

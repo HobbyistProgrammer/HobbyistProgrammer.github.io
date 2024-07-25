@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: var(--light-gray);
-  background-color: var(--primary-dark-blue);
+  background: linear-gradient(to right, var(--primary-dark-blue), var(--secondary-dark-blue), var(--light-blue));
 }
 
 a {
@@ -29,3 +29,12 @@ a:hover {
 }
 
 /* Ensure that these styles are global or apply to components as needed */
+.App {
+  display: flex;
+}
+
+.content {
+  margin-left: 250px; /* Adjust according to sidebar width */
+  padding: 20px;
+  flex: 1; /* Take up remaining space */
+}

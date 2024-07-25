@@ -1,0 +1,23 @@
+.greeting {
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to right, var(--primary-dark-blue), var(--secondary-dark-blue)); /* Ombre background */
+  display: flex;
+  justify-content: center; /* Center the table horizontally */
+  align-items: center; /* Center the table vertically */
+  padding: 20px; /* Padding around the container */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.greeting-table {
+  width: 80%; /* Adjust as needed */
+  border-collapse: collapse; /* Collapse borders */
+}
+
+.text-section, .image-section {
+  padding: 10px; /* Padding inside table cells */
+}
+
+.image-section img {
+  max-width: 100%; /* Ensure image fits within cell */
+  height: auto; /* Maintain aspect ratio */
+}
