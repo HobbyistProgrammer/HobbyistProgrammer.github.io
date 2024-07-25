@@ -1,0 +1,31 @@
+:root {
+  --primary-dark-blue: #0D1B2A;
+  --secondary-dark-blue: #1B263B;
+  --accent-blue: #415A77;
+  --light-blue: #778DA9;
+  --light-gray: #E0E1DD;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--light-gray);
+  background-color: var(--primary-dark-blue);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light-gray);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Ensure that these styles are global or apply to components as needed */

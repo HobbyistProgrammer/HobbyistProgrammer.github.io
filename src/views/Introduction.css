@@ -1,0 +1,50 @@
+.introduction {
+  padding: 60px 20px;
+  background-color: var(--primary-dark-blue);
+  color: var(--light-gray);
+  text-align: left;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.introduction.hidden {
+  opacity: 0;
+}
+
+.introduction h1, .introduction h2 {
+  color: var(--light-gray);
+}
+
+.introduction h2 {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.introduction p {
+  margin: 15px 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.introduction ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 15px 0;
+}
+
+.introduction li {
+  margin: 10px 0;
+}
+
+.introduction a {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.introduction a:hover {
+  color: var(--accent-blue);
+}
+
+.contact-info {
+  margin-top: 30px;
+}
