@@ -1,15 +1,14 @@
-/* Style for Navbar */
 .sidebar {
-  position: fixed; /* Keep the navbar fixed on the side */
-  width: 200px; /* Adjust width as needed */
-  height: 100vh; /* Full viewport height */
+  position: fixed; 
+  width: 200px;
+  height: 100vh;
   background-color: var(--primary-dark-blue);
   color: var(--light-gray);
   display: flex;
   flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 1000; /* Ensure it sits above other content */
+  z-index: 1000;
 }
 
 .sidebar ul {

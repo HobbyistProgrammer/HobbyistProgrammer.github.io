@@ -28,13 +28,12 @@ a:hover {
   padding: 20px;
 }
 
-/* Ensure that these styles are global or apply to components as needed */
 .App {
   display: flex;
 }
 
 .content {
-  margin-left: 250px; /* Adjust according to sidebar width */
+  margin-left: 250px;
   padding: 20px;
-  flex: 1; /* Take up remaining space */
+  flex: 1;
 }
