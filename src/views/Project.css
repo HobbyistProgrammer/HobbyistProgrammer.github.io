@@ -1,6 +1,47 @@
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  color: var(--light-gray); /* text color */
+}
+
+/* Container for projects */
+.project-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid var(--primary-light-gray);
+  border-radius: 10px;
+  background-color: var(--primary-light-blue);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+.project-item p, .project-item ul {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.project-item a.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--light-gray);
+  background-color: var(--primary-dark-blue);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.project-item a.download-button:hover {
+  background-color: var(--light-gray);
+}

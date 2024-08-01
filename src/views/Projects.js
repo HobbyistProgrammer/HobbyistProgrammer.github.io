@@ -6,40 +6,41 @@ import calc_compute from '../assets/calculator_compute.png';
 const Project = () => {
   return (
     <>
-        <h2>Experience</h2>
-        <p>
-            Academic projects can be found on my github, my main academic experience working on various projects include:
-        </p>
+      <h2>Experience</h2>
+      <p>More academic projects can be found on my GitHub. Showcasing my main academic experiences working on various projects:</p>
+      <div className="project-item">
+        <h3>BookSwap</h3>
+        <p>A mobile application that allows users to create book listings, view book listings, and request books.</p>
         <ul>
-            <li>Completing various SRS document related to project management</li>
-            <br />
-            <li>
-                BookSwap - A mobile application that allowed users to create book listings, view book listings, and request book. <br/>
-                This app was created to scan ISBN numbers on books and retrieve related data from a library API. <br />
-                Entered/retrieved information about book listings would be obtained/retrieved from a PostGreSQL database. <br />
-                My contribution to this project was the frontend UI, barcode camera scan, and library API retrieval.
-            </li>
-            <br />
-            <li>
-                SneakIn - A web application that allows business owners to check daily/monthly/yearly invoices, reports, and market prices for items. <br />
-                This app was created using Typescript XML as well as leveraging Amazon RDS AWS to store information. <br />
-                My own contribution to the project was establishing the connection between the amazon AWS database and the interative UI frontend, as well as updating frontend UI format. <br />
-                This project can be downloaded here: <a href="/projects/SneakIn.zip" download="SneakIn.zip">SneakIn App Download</a><br />
-            </li>
-            <br />
-            <li>
-                Simple Calculator - A JavaFX application that allows users to compute simple math calculations. <br />
-                This app was created using Java and JavaFX that demonstrates knowledge with UX principles and event-driven operations. <br />
-                This project can be visited on my GitHub or downloaded here: <a href="/projects/Calculator.zip" download="Calculator.zip">Calculator App Download</a><br />
-            </li>
-            <img src={calc_view} alt="Calculator View"/>
-            <img src={calc_compute} alt="Calculator Compute"/>
+          <li>Scans ISBN numbers on books and retrieves related data from a library API.</li>
+          <li>Uses a PostgreSQL database for book listing information.</li>
+          <li>My contribution: frontend UI, barcode camera scan, and library API retrieval.</li>
         </ul>
-        <p>
-            I've worked on various projects that include developing web applications, analyzing data, and 
-            implementing machine learning models. My hands-on experience has provided me with a solid foundation 
-            in programming and software design.  
-        </p>
+      </div>
+      
+      <div className="project-item">
+        <h3>SneakIn</h3>
+        <p>A web application that allows business owners to check invoices, reports, and market prices for items.</p>
+        <ul>
+          <li>Uses Typescript XML and Amazon RDS AWS for storage.</li>
+          <li>My contribution: AWS database connection and frontend UI updates.</li>
+        </ul>
+        <a href="/projects/SneakIn.zip" download="SneakIn.zip" className="download-button">SneakIn App Download</a>
+      </div>
+
+      <div className="project-item">
+        <h3>Simple Calculator</h3>
+        <p>A JavaFX application that allows users to perform simple math calculations.</p>
+        <ul>
+          <li>Created using Java and JavaFX, demonstrating UX principles and event-driven operations.</li>
+          <li>Includes features for basic arithmetic and more complex calculations.</li>
+        </ul>
+        <div className="project-images">
+          <img src={calc_view} alt="Calculator View"/>
+          <img src={calc_compute} alt="Calculator Compute"/>
+        </div>
+        <a href="/projects/Calculator.zip" download="Calculator.zip" className="download-button">Calculator App Download</a>
+      </div>
     </>
   );
 };
