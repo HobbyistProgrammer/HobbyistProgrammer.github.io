@@ -2,6 +2,8 @@ import React from 'react';
 import './Project.css';
 import calc_view from '../assets/calculator_view.png';
 import calc_compute from '../assets/calculator_compute.png';
+import macro_view from '../assets/macrosapp.png';
+import macro_db from '../assets/mysql_db.png';
 
 const Project = () => {
   return (
@@ -54,6 +56,37 @@ const Project = () => {
                 <img src={calc_compute} alt="Calculator Compute"/>
             </div>
             <a href="/projects/Calculator.zip" download="Calculator.zip" className="download-button">Calculator App Download</a>
+        </div>
+
+        <div className="project-item">
+            <h3>Macros Calender Tracking App</h3>
+            <p>
+                A JavaFX application that allows users to search a comprehensive grocery/product/recipe API (Spoonacular) 
+                to retrieve and store nutritional information for each day.
+            </p>
+            <p><a href="https://spoonacular.com/food-api" target="_blank">* URL to Spoonacular *</a></p>
+            <ul>
+                <li>Developed using Java and JavaFX, highlighting UX principles and event-driven design.</li>
+                <li>This application was created by utilizing Spoonacular's API to access detailed product macros, 
+                    with MySQL handling local database storage and retrieval.</li>
+                <li>As illustrated below:
+                    <ol>
+                        <li>
+                            This app allows users to add products obtained through a search from the Spoonacular API.
+                            Which can then be stored for the following date. 
+                        </li>
+                        <li>
+                            After choosing which product the user would like to add to that date (double-click item), it will be stored into the MySQL database
+                            and retrieved to be displayed alongside all the other products selected.
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <div className="project-images">
+                <img src={macro_view} alt="Macro App View"/>
+                <img src={macro_db} alt="App DB View"/>
+            </div>
+            <a href="/projects/MacrosApplication.zip" download="MacrosApplication.zip" className="download-button">Macros Tracker App Download</a>
         </div>
     </>
   );
