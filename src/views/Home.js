@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import myImage from '../assets/placeholder.png';
+import myImage from '../assets/me.jpg';
 
 const Greeting = () => {
   return (
@@ -18,7 +18,7 @@ const Greeting = () => {
           </h3>
         </div>
         <div className="image-container">
-          <img src={myImage} alt="Me" />
+          <img width="300" height="300" src={myImage} alt="Me" />
         </div>
       </div>
     </div>
