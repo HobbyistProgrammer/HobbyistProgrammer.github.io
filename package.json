@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "homepage": "https://hobbyistprogrammer.github.io/",
+    "homepage": "https://hobbyistprogrammer.github.io/hobbyistprogrammer.github.io",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
