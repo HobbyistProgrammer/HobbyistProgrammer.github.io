@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'; // Adjust path as needed
+import Navbar from './components/Navbar';
 import Home from './views/Home';
 import AboutMe from './views/AboutMe';
-import Projects from './views/Projects'; // Ensure this component exists
+import Projects from './views/Projects';
 
 const App = () => {
   return (

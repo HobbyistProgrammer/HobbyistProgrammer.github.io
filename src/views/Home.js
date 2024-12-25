@@ -4,21 +4,19 @@ import myImage from '../assets/me.jpg';
 
 const Greeting = () => {
   return (
-    <div className="greeting-container">
-      <div className="greeting-content">
-        <div className="info">
-          <h1>Software Engineer | Full-Stack Developer | Machine Learning Enthusiast</h1>
-          <h3>
-            Welcome! I'm Benton Le, a dedicated software engineer with a passion for crafting innovative applications.
-            <br />
-            This site showcases my diverse expertise and the projects that I am currently working on or worked on.
-            <br />
-            Feel free to scroll down to explore my background, experiences, or to learn more about me.
-            <br />
-          </h3>
+    <div className="greeting-page">
+      <div className="content-wrapper">
+        <div className="image-section">
+          <img src={myImage} alt="Me" />
         </div>
-        <div className="image-container">
-          <img width="300" height="300" src={myImage} alt="Me" />
+        <div className="info-section">
+          <h1>Benton Le</h1>
+          <p className="tagline">Software Engineer | Full-Stack Developer | Machine Learning Enthusiast</p>
+          <p className="description">
+            Welcome! I'm a dedicated software engineer with a passion for crafting innovative applications.
+            This site showcases my expertise and the projects I'm currently working on or have completed.
+            Feel free to explore my portfolio!
+          </p>
         </div>
       </div>
     </div>

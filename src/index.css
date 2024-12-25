@@ -1,21 +1,27 @@
 :root {
-  --primary-dark-blue: #0D1B2A;
-  --secondary-dark-blue: #1B263B;
-  --accent-blue: #415A77;
-  --light-blue: #778DA9;
-  --light-gray: #E0E1DD;
+  --primary-dark-neutral: #2D2A32;
+  --secondary-neutral: #423F4D;
+  --accent-neutral: #8D7E6C;
+  --light-neutral: #D4CBBF;
+  --light-gray: #F5F4F2;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: var(--light-gray);
-  background: linear-gradient(to right, var(--primary-dark-blue), var(--secondary-dark-blue), var(--light-blue));
+  background: linear-gradient(
+    to right,
+    var(--primary-dark-neutral),
+    var(--secondary-neutral),
+    var(--light-neutral)
+  );
 }
 
 a {
-  color: var(--accent-blue);
+  color: var(--accent-neutral);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {

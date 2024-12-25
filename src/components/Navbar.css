@@ -1,32 +1,39 @@
-.sidebar {
-  position: fixed; 
-  width: 200px;
-  height: 100vh;
-  background-color: var(--primary-dark-blue);
-  color: var(--light-gray);
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  box-sizing: border-box;
-  z-index: 1000;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar li {
-  margin: 20px 0;
-}
-
 .sidebar a {
   color: var(--light-gray);
   text-decoration: none;
   font-size: 1.2em;
+  position: relative;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .sidebar a:hover {
   color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+.sidebar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-blue);
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar a.active {
+  color: var(--accent-blue);
+  font-weight: bold;
+}
+
+.sidebar a svg {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 1.2em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar a:hover svg {
+  transform: scale(1.2); /* Zoom effect for icons */
 }
