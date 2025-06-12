@@ -50,7 +50,7 @@ const Project = () => {
                     <p>
                         An <strong>Android mobile application</strong> that allows users to find snow removal users (Youth Shovellers or Adult Shovellers) in their area.<br/>
                         Built with <strong>Java and Android Studio, and integrated with Google Firebase.</strong><br/>
-                        <strong>My Role:</strong> Led the design and development of the application, focusing on <strong>Firebase database integration</strong>
+                        <strong>My Role:</strong> Led the design and development of the application, focusing on <strong>Firebase database integration </strong>
                         for real-time data synchonization and user, property, and shoveller information storage.
                         Developed and optimized the <strong>user interface</strong> and integrated <strong>API's</strong> to streamline interactions between users.
                     </p>
@@ -61,9 +61,9 @@ const Project = () => {
                     <h3>Product Inventory Management System</h3>
                     <p>
                         A robust <strong>Web API</strong> designed for business owners to manage products and orders efficiently, leveraging <strong>Amazon AWS</strong> for scalability and performance.  
-                        <br/><br/>
+                        <br/>
                         <strong>Tech Stack:</strong> Visual Studio (C#), ASP.NET, Amazon DynamoDB, AWS ECR, AWS ECS (Fargate), Google Apigee.  
-                        <br/><br/>
+                        <br/>
                         <strong>Key Features:</strong>
                         <ul>
                             <li>Implemented a <strong>microservices architecture</strong> using AWS ECS and Fargate for scalable deployment.</li>
@@ -76,12 +76,14 @@ const Project = () => {
             </div>
             <h2>Self-Initiated Projects</h2>
             <div className="project-container">
-                <div className="project-card" onClick={() => handleCardClick('https://github.com/HobbyistProgrammer/Calculator')}>
+                <div className="project-card" onClick={() => handleCardClick('https://github.com/HobbyistProgrammer/PassForge')}>
                     <img src={redirect_icon} alt="Redirect" className="redirect-icon" />
                     <img src={github_icon} alt="GitHub" className="github-icon" />
-                    <h3>Simple Calculator</h3>
+                    <h3>PassForge - Password Manager</h3>
                     <p>
-                        A JavaFX app for basic arithmetic and advanced calculations.<br/>
+                        A JavaFX app for secure password management.<br />
+                        Uses PBKDF2 + AES for local encryption.<br />
+                        Built with JavaFX, SQLite, and FormsFX.<br />
                         <strong>My Role:</strong> Full-stack development.
                     </p>
                 </div>
